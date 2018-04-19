@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Create Questions</title>
+	<!--Change main2.js to main.hs
+		change testCases1[] to testCases[]
+	-->
+	<script type="text/javascript" src="../main.js"></script>
+</head>
+<body>
+	<form>
+	<h3>Topic</h3>
+	<select id="topic">
+		<option value="topic1">CS Topic 1</option>
+		<option value="topic2">CS Topic 2</option>
+		<option value="topic3">CS Topic 3</option>
+		<option value="topic4">CS Topic 4</option>
+	</select>
+		
+	<h3>Difficulty</h3>
+	<select id="difficulty">
+		<option value="1">Easy</option>
+		<option value="2">Medium</option>
+		<option value="3">Hard</option>
+	</select>
+	
+	<h3>Question</h3>
+	<textarea id="content" placeholder="Enter Question"></textarea>
+		
+	<h3>Function Name</h3>
+	<input type="text" id="functionName"
+	  autocomplete=off placeholder="Enter function name" required>
+	<br>
+
+	<div id=testCaseField>
+		<div id="testCaseExample">
+			Expected output 1 <br>
+			<input type="text" name="testCases[]" id="1" >
+			<input type="button" onclick="addArgs()" value="Add Args"/>
+		</div>
+	</div>
+	
+	<input type="button" onclick="createTestCase('testCaseExample')"
+	value="Add New Test Case"/>
+	</form>	
+	<button onclick="createQuestion()">Add Question</button>
+</body>
+</html>

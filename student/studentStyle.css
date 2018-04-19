@@ -1,0 +1,64 @@
+/*
+	This stylesheet is used to decorate the teacher index page
+*/
+
+/*	
+	IMPORTS	
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/*	
+	Basic	
+*/
+
+html {
+	background-color:rgb(85, 85, 85);
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	height:100vh;
+}
+ul {
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+}
+
+/*	
+	Structure	
+*/
+#container {
+	width:100%;
+	min-height:100%;
+	padding: 5px;
+}
+
+#header{
+	display: flex;
+	justify-content: flex-start;
+	background-color:rgb(170, 215, 230);
+	font-size: 16px;
+	height:5%;
+}
+#footer{
+	background-color:rgb(85, 85, 85);
+	height: 5%;
+}
+#workspace{
+	display:flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+
+	background-color:rgb(225, 225, 225); 
+
+}
+/*
+	Animations
+*/
+
+/*
+	Others
+*/
